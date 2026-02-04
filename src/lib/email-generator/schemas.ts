@@ -80,11 +80,11 @@ export const TimingSignalSchema = z.object({
  * Lightweight version of full Account type - only what's needed for email generation
  */
 export const AccountInputSchema = z.object({
-  // Required fields
+  // Required fields - use permissive validation to handle partial data
   index: z.number().min(1).max(999).describe('Account index (001-999)'),
   company_name: z.string().min(1).describe('Organization name'),
-  tier: z.string().describe('Account tier (A+, A, B, etc.)'),
-  ehr_system: z.string().describe('Primary EHR platform (Epic, Cerner, etc.)'),
+  tier: z.string().min(1).describe('Account tier (A+, A, B, etc.)'),
+  ehr_system: z.string().min(1).describe('Primary EHR platform (Epic, Cerner, etc.)'),
 
   // Optional but valuable for personalization
   employee_count: z.number().optional().describe('Total employees'),
@@ -104,17 +104,22 @@ export const AccountInputSchema = z.object({
 /**
  * Simplified contact input for generation
  * Lightweight version of full Contact type
+ *
+ * Note: email validation is permissive (accepts any string) because
+ * some contacts may have incomplete data. The email is used for
+ * personalization context, not for actual sending.
  */
 export const ContactInputSchema = z.object({
-  // Required fields
+  // Required fields - min(1) ensures non-empty strings
   contact_id: z.string().min(1).describe('Contact identifier'),
   full_name: z.string().min(1).describe('Contact full name'),
   first_name: z.string().min(1).describe('Contact first name'),
   title: z.string().min(1).describe('Job title'),
-  email: z.string().email().describe('Contact email'),
+  // Email is permissive - accepts any string including empty for incomplete data
+  email: z.string().describe('Contact email (permissive for incomplete data)'),
 
-  // Persona classification
-  persona_match: z.string().describe('Persona type (IT/Digital Leader, Clinical/Education Leader, etc.)'),
+  // Persona classification - allow empty string for missing data
+  persona_match: z.string().default('').describe('Persona type (IT/Digital Leader, Clinical/Education Leader, etc.)'),
 
   // Optional context
   department: z.string().optional(),
