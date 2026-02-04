@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import type { AccountListItem, ContactListItem, Account, Contact } from '@/lib/types';
 import type { EmailSequence, AccountInput, ContactInput } from '@/lib/email-generator';
 
@@ -36,6 +36,19 @@ export default function EmailGenerator({
   const [statuses, setStatuses] = useState<GenerationStatus[]>([]);
   const [generatedEmails, setGeneratedEmails] = useState<Map<string, EmailSequence>>(new Map());
   const [error, setError] = useState<string | null>(null);
+
+  // Track previous account to detect account changes
+  const prevAccountRef = useRef<number | null>(null);
+
+  // Clear error/status state when account changes (UAT-004 fix)
+  useEffect(() => {
+    if (prevAccountRef.current !== null && prevAccountRef.current !== account.index) {
+      // Account changed - clear previous generation state
+      setStatuses([]);
+      setError(null);
+    }
+    prevAccountRef.current = account.index;
+  }, [account.index]);
 
   /**
    * Build AccountInput from available data
@@ -160,6 +173,7 @@ export default function EmailGenerator({
 
     setIsGenerating(true);
     setError(null);
+    setStatuses([]); // Clear previous statuses/errors
     setGeneratedEmails(new Map());
 
     // Initialize statuses for all contacts
