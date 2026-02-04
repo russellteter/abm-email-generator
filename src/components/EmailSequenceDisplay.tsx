@@ -2,14 +2,17 @@
 
 import EmailCard from '@/components/EmailCard';
 import ExportButton from '@/components/ExportButton';
+import SaveButton from '@/components/SaveButton';
 import type { EmailSequence } from '@/lib/email-generator';
 
 interface EmailSequenceDisplayProps {
+  accountIndex: number;
   contactId: string;
   contactName: string;
   contactTitle: string;
   accountName: string;
   emails: EmailSequence;
+  onSaved?: (id: string) => void;
 }
 
 /**
@@ -19,11 +22,13 @@ interface EmailSequenceDisplayProps {
  * Shows contact header, 3 email cards, and Export to Word button.
  */
 export default function EmailSequenceDisplay({
+  accountIndex,
   contactId,
   contactName,
   contactTitle,
   accountName,
   emails,
+  onSaved,
 }: EmailSequenceDisplayProps) {
   return (
     <div className="rounded-xl border border-class-light-purple bg-white p-6">
@@ -48,8 +53,17 @@ export default function EmailSequenceDisplay({
         ))}
       </div>
 
-      {/* Export Button Footer */}
-      <div className="mt-6 flex justify-end border-t border-class-light-purple pt-4">
+      {/* Action Buttons Footer */}
+      <div className="mt-6 flex justify-end gap-3 border-t border-class-light-purple pt-4">
+        <SaveButton
+          accountIndex={accountIndex}
+          accountName={accountName}
+          contactId={contactId}
+          contactName={contactName}
+          contactTitle={contactTitle}
+          emails={emails}
+          onSaved={onSaved}
+        />
         <ExportButton
           contactId={contactId}
           contactName={contactName}

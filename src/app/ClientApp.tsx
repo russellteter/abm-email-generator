@@ -177,6 +177,7 @@ export default function ClientApp({ accounts }: ClientAppProps) {
               return (
                 <EmailSequenceDisplay
                   key={contactId}
+                  accountIndex={selectedAccountIndex!}
                   contactId={contactId}
                   contactName={contact?.full_name ?? 'Unknown Contact'}
                   contactTitle={contact?.title ?? ''}
