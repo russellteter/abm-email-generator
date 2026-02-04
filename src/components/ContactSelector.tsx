@@ -128,13 +128,22 @@ export default function ContactSelector({
                 className="mt-1 h-4 w-4 rounded border-class-navy/30 text-class-purple focus:ring-class-purple/30"
               />
               <div className="flex-1 min-w-0">
-                <div className="font-medium text-class-navy truncate">
+                <div
+                  className="font-medium text-class-navy truncate"
+                  title={`${contact.full_name} — ${contact.title}`}
+                >
                   {contact.full_name} — {contact.title}
                 </div>
-                <div className="text-sm text-class-navy/60 truncate">
+                <div
+                  className="text-sm text-class-navy/60 truncate"
+                  title={contact.persona_match}
+                >
                   {contact.persona_match}
                 </div>
-                <div className="text-xs text-class-navy/40 truncate">
+                <div
+                  className="text-xs text-class-navy/40 truncate"
+                  title={contact.email}
+                >
                   {contact.email}
                 </div>
               </div>
