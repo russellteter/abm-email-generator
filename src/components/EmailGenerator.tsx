@@ -155,12 +155,42 @@ export default function EmailGenerator({
       const emails = JSON.parse(accumulated) as EmailSequence;
       return emails;
     } catch {
-      // Sometimes the model might output text before/after JSON
-      // Try to extract JSON array from response
-      const jsonMatch = accumulated.match(/\[\s*\{[\s\S]*\}\s*\]/);
-      if (jsonMatch) {
-        return JSON.parse(jsonMatch[0]) as EmailSequence;
+      // Claude often adds markdown code blocks or explanatory text
+      // Try multiple extraction strategies
+
+      // Strategy 1: Extract from markdown code block ```json ... ```
+      const codeBlockMatch = accumulated.match(/```(?:json)?\s*([\s\S]*?)```/);
+      if (codeBlockMatch) {
+        try {
+          return JSON.parse(codeBlockMatch[1].trim()) as EmailSequence;
+        } catch {
+          // Continue to next strategy
+        }
       }
+
+      // Strategy 2: Find JSON array pattern anywhere in response
+      const jsonMatch = accumulated.match(/\[\s*\{[\s\S]*?\}\s*\]/);
+      if (jsonMatch) {
+        try {
+          return JSON.parse(jsonMatch[0]) as EmailSequence;
+        } catch {
+          // Continue to next strategy
+        }
+      }
+
+      // Strategy 3: Find from first [ to last ]
+      const firstBracket = accumulated.indexOf('[');
+      const lastBracket = accumulated.lastIndexOf(']');
+      if (firstBracket !== -1 && lastBracket > firstBracket) {
+        try {
+          const jsonStr = accumulated.slice(firstBracket, lastBracket + 1);
+          return JSON.parse(jsonStr) as EmailSequence;
+        } catch {
+          // All strategies failed
+        }
+      }
+
+      console.error('Failed to parse response:', accumulated.slice(0, 500));
       throw new Error('Failed to parse email sequence from response');
     }
   }, [buildContactInput]);
