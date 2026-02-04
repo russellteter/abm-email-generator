@@ -162,3 +162,42 @@ export interface SendersConfig {
   };
   variant_differentiation: Record<string, VariantDifferentiation>;
 }
+
+// ============ Saved Email Types ============
+
+import type { EmailSequence } from '@/lib/email-generator/schemas';
+
+/**
+ * A saved email sequence with metadata
+ */
+export interface SavedEmail {
+  id: string; // UUID
+  accountIndex: number;
+  accountName: string;
+  contactId: string;
+  contactName: string;
+  contactTitle: string;
+  emails: EmailSequence;
+  createdAt: string; // ISO string
+  updatedAt: string; // ISO string
+}
+
+/**
+ * Metadata for saved email (without full email content, for listing)
+ */
+export interface SavedEmailMetadata {
+  id: string;
+  accountIndex: number;
+  accountName: string;
+  contactId: string;
+  contactName: string;
+  contactTitle: string;
+  emailCount: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/**
+ * Index of all saved emails (id -> metadata)
+ */
+export type SavedEmailsIndex = Record<string, SavedEmailMetadata>;
