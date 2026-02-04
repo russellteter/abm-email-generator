@@ -1,0 +1,456 @@
+{
+  "account_id": "TIERAP_006",
+  "company_name": "Kaleida Health",
+  "domain": "kaleidahealth.org",
+  "zoominfo_company_id": "46746018",
+  "discovery_timestamp": "2026-02-03T11:30:00Z",
+  "discovery_source": "ZoomInfo",
+  "contacts": [
+    {
+      "contact_id": "895152493",
+      "first_name": "Courtney",
+      "last_name": "Starnes",
+      "full_name": "Courtney Starnes",
+      "title": "Chief Information Officer",
+      "department": "Information Technology",
+      "management_level": "C-Level",
+      "email": "courtney_starnes@kaleidahealth.org",
+      "email_confidence": 93,
+      "phone": null,
+      "mobile_phone": "(816) 876-0626",
+      "linkedin_url": "https://www.linkedin.com/in/courtney-starnes-wny",
+      "location": "Buffalo, New York",
+      "position_start_date": "2023-11-01",
+      "years_in_role": 2,
+      "total_experience": "20-29 years",
+      "persona_match": "CIO - Primary Executive Sponsor",
+      "relevance_notes": "CIO since November 2023 - directly leading the 13-system Epic consolidation. CRITICAL: Started career at Cerner Corporation (2005-2017), then held CIO roles at Children's Mercy Hospital and Saint Luke's Health System. Deep EHR implementation experience from both vendor and provider sides. Owns Epic implementation strategy, vendor relationships, and training approach. Key quote: 'We chose Epic because their values and guiding principles align with our mission.' Bachelor's from Missouri State.",
+      "outreach_priority": 1,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "1337316132",
+      "first_name": "Peter",
+      "last_name": "Winkelstein",
+      "full_name": "Dr. Peter Winkelstein",
+      "title": "Chief Medical Informatics Officer",
+      "department": "Information Technology / Clinical",
+      "management_level": "C-Level",
+      "email": "pwinkelstein@kaleidahealth.org",
+      "email_confidence": 94,
+      "phone": "(716) 881-7546",
+      "mobile_phone": "(716) 380-0146",
+      "linkedin_url": "https://www.linkedin.com/in/pwink",
+      "location": "Buffalo, New York",
+      "position_start_date": "2014-06-01",
+      "years_in_role": 11,
+      "total_experience": "20-29 years",
+      "persona_match": "CMIO - Clinical Executive Sponsor",
+      "relevance_notes": "CMIO since 2014 - physician leader for clinical informatics. MD from Jacobs School of Medicine (UB), MBA from UB School of Management, MS from Stony Brook. Former President of Medical Staff (2016-2019). Executive Director of Institute for Healthcare Informatics. Clinical Professor of Pediatrics at UB. Key bridge between clinical staff and Epic implementation - influences physician training approach and clinical workflow decisions.",
+      "outreach_priority": 2,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "1699461306",
+      "first_name": "Kristian",
+      "last_name": "Feterik",
+      "full_name": "Dr. Kristian Feterik",
+      "title": "Vice President, Chief Health Information Officer",
+      "department": "Health Information",
+      "management_level": "C-Level / VP-Level",
+      "email": "kxfeterik@kaleidahealth.org",
+      "email_confidence": 94,
+      "phone": null,
+      "mobile_phone": "(216) 312-5436",
+      "linkedin_url": "https://www.linkedin.com/in/feterik",
+      "location": "Buffalo, New York",
+      "position_start_date": "2025-05-01",
+      "years_in_role": 0,
+      "total_experience": "20-29 years",
+      "persona_match": "CHIO - Clinical Informatics Leader",
+      "relevance_notes": "NEW HIRE - VP/CHIO since May 2025. MD from Slovakia, MBA from UMass Amherst. CRITICAL: Previously at UPMC as Medical Director of Clinical Informatics and Epic Physician Builder (2017-2025). Direct Epic build experience and clinical informatics fellowship associate program director. Brought in specifically to support Epic implementation. Also current staff physician at Cleveland Clinic and Thieme Associate Editor.",
+      "outreach_priority": 3,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "8993453000",
+      "first_name": "Ian",
+      "middle_name": "C.",
+      "last_name": "Barrett",
+      "full_name": "Dr. Ian C. Barrett",
+      "title": "Executive Vice President & Chief Human Resources Officer",
+      "department": "Human Resources",
+      "management_level": "VP-Level",
+      "email": "icbarrett@kaleidahealth.org",
+      "email_confidence": 98,
+      "phone": null,
+      "mobile_phone": "(281) 309-8479",
+      "linkedin_url": "https://www.linkedin.com/in/iancbarrett",
+      "location": "Buffalo, New York",
+      "position_start_date": "2022-10-01",
+      "years_in_role": 3,
+      "total_experience": "20-29 years",
+      "persona_match": "CHRO - HR Executive Sponsor",
+      "relevance_notes": "EVP/CHRO since October 2022. EdD and MBA (UNC Kenan-Flagler). Previously Regional VP HR at BJC HealthCare (2019-2022), Associate VP HR Talent Management at UTMB Health (2011-2019), and Associate VP HR at Cincinnati Children's (2004-2009). Owns all HR functions including Learning & Development. Key executive sponsor for enterprise-wide training initiatives and workforce development strategy.",
+      "outreach_priority": 4,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "392166353",
+      "first_name": "Leslie",
+      "middle_name": "H.",
+      "last_name": "Brookins",
+      "full_name": "Leslie H. Brookins, RPh, MS",
+      "title": "Senior Director, EPIC Implementation",
+      "department": "Information Technology",
+      "management_level": "Director",
+      "email": "lhbrookins@kaleidahealth.org",
+      "email_confidence": 93,
+      "phone": null,
+      "mobile_phone": "(816) 916-5372",
+      "linkedin_url": "https://www.linkedin.com/in/leslie-brookins-rph-ms-45b53313",
+      "location": "Kansas City, Missouri (remote)",
+      "position_start_date": "2024-12-01",
+      "years_in_role": 0,
+      "total_experience": "30-39 years",
+      "persona_match": "Epic Implementation Lead - Primary Program Manager",
+      "relevance_notes": "CRITICAL NEW HIRE - Senior Director Epic Implementation since December 2024. Registered Pharmacist with MA from UT Dallas. Previously at Saint Luke's Health System (Kansas City) - Director Pharmacy Oncology and Lab Platforms (2021-2024), and Manager Pharmacy IT (2000-2020). 24+ years at Saint Luke's with deep Epic experience. SAME SYSTEM AS CIO COURTNEY STARNES - likely recruited specifically for Epic expertise. Key contact for implementation timeline, training coordination, and go-live readiness.",
+      "outreach_priority": 5,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "6936419322",
+      "first_name": "Shawn",
+      "last_name": "Lyman",
+      "full_name": "Shawn Lyman",
+      "title": "Vice President, Chief Technology Officer",
+      "department": "Information Technology",
+      "management_level": "C-Level / VP-Level",
+      "email": "smlyman@kaleidahealth.org",
+      "email_confidence": 98,
+      "phone": "(716) 859-4803",
+      "mobile_phone": "(716) 364-3962",
+      "linkedin_url": "https://www.linkedin.com/in/shawn-lyman-6942741a9",
+      "location": "Buffalo, New York",
+      "position_start_date": "2024-04-01",
+      "years_in_role": 1,
+      "total_experience": "20-29 years",
+      "persona_match": "CTO - Technology Infrastructure Leader",
+      "relevance_notes": "VP/CTO since April 2024. MBA from D'Youville, BS from Houghton, AS from ITT Technical. Promoted internally from Director Technology Engineering (2023-2024) and Manager (2021-2024). Previously Lead Technical Engineer at Catholic Health (2007-2021). 17+ years WNY healthcare IT experience. Owns technology infrastructure supporting Epic implementation.",
+      "outreach_priority": 6,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "3428455117",
+      "first_name": "Dawn",
+      "middle_name": "M.T.",
+      "last_name": "Tymorek",
+      "full_name": "Dawn M.T. Tymorek",
+      "title": "Manager, EHR Training",
+      "department": "Human Resources - Learning & Development",
+      "management_level": "Manager",
+      "email": "dtymorek@kaleidahealth.org",
+      "email_confidence": 93,
+      "phone": null,
+      "mobile_phone": "(716) 939-0891",
+      "linkedin_url": "https://www.linkedin.com/in/dawntymorek",
+      "location": "Buffalo, New York",
+      "position_start_date": "2024-10-01",
+      "years_in_role": 0,
+      "total_experience": "30-39 years",
+      "persona_match": "EHR Training Manager - Direct Training Owner",
+      "relevance_notes": "CRITICAL CONTACT - Manager EHR Training since October 2024. Promoted specifically for Epic implementation from IT Analyst role (2022-2024). Previously Clinical Systems Educator at UB Associates (2010-2022). Direct owner of Epic training program delivery. 20+ years EHR training experience. Key operational contact for training curriculum, scheduling, and delivery methods.",
+      "outreach_priority": 7,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "1999689463",
+      "first_name": "Charity",
+      "middle_name": "L.",
+      "last_name": "Burgio",
+      "full_name": "Charity L. Burgio",
+      "title": "Manager, Learning & Performance",
+      "department": "Human Resources - Learning & Development",
+      "management_level": "Manager",
+      "email": "cburgio@kaleidahealth.org",
+      "email_confidence": 98,
+      "phone": "(716) 859-8319",
+      "mobile_phone": "(716) 908-9271",
+      "linkedin_url": "https://www.linkedin.com/in/charity-burgio",
+      "location": "Buffalo, New York",
+      "position_start_date": "2018-01-01",
+      "years_in_role": 8,
+      "total_experience": "30-39 years",
+      "persona_match": "Learning & Performance Manager - L&D Operations",
+      "relevance_notes": "Manager Learning & Performance since 2018. BA and MA from Canisius College. Previously Faculty Development Coordinator at Bryant & Stratton College (2016-2017), Trainer at Canisius CPD, Instructor at Medaille College (2007-2021). Owns enterprise learning and performance programs - key contact for LMS integration and general employee training coordination alongside Epic-specific training.",
+      "outreach_priority": 8,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "2046471050",
+      "first_name": "Jennifer",
+      "last_name": "Meyer",
+      "full_name": "Jennifer Meyer, DNP, MSN, RN",
+      "title": "Senior Director, Nursing Informatics",
+      "department": "Nursing / Information Technology",
+      "management_level": "Director",
+      "email": "jjmeyer@kaleidahealth.org",
+      "email_confidence": 98,
+      "phone": null,
+      "mobile_phone": "(614) 354-9951",
+      "linkedin_url": "https://www.linkedin.com/in/jennifer-meyer-msn-rn-ni-bc-5b518652",
+      "location": "Buffalo, New York",
+      "position_start_date": "2024-12-01",
+      "years_in_role": 0,
+      "total_experience": "20-29 years",
+      "persona_match": "Nursing Informatics Leader - Clinical Training Champion",
+      "relevance_notes": "NEW HIRE - Senior Director Nursing Informatics since December 2024. DNP from Post University, MSN from University of Washington, BSN from Otterbein. Previously Director Clinical & Operational Informatics at UPMC Hamot & Chautauqua (2023-2024), Informatics Nurse II at UPMC Hamot (2020-2023), and Nurse Educator Clinical Informatics at Nationwide Children's Hospital (2013-2020). 11+ years nursing informatics experience. Key champion for nursing staff Epic adoption and clinical workflow training.",
+      "outreach_priority": 9,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "2384488413",
+      "first_name": "Beth",
+      "last_name": "Rubin",
+      "full_name": "Beth Rubin",
+      "title": "Senior Director, Information Technology Applications",
+      "department": "Information Technology",
+      "management_level": "Director",
+      "email": "brubin@kaleidahealth.org",
+      "email_confidence": 98,
+      "phone": null,
+      "mobile_phone": "(716) 859-8130",
+      "linkedin_url": "https://www.linkedin.com/in/beth-rubin-996a309a",
+      "location": "Buffalo, New York",
+      "position_start_date": "2003-01-01",
+      "years_in_role": 23,
+      "total_experience": "20-29 years",
+      "persona_match": "IT Applications Leader - Clinical Systems Owner",
+      "relevance_notes": "Senior Director IT Applications since 2003. 23+ years at Kaleida Health. Previously Director Clinical Systems. Deep institutional knowledge of all legacy EHR systems being consolidated. Key technical leader for application integration, data migration, and system configuration during Epic transition.",
+      "outreach_priority": 10,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "2580391043",
+      "first_name": "Fahad",
+      "last_name": "Bilal",
+      "full_name": "Fahad Bilal",
+      "title": "Vice President, Human Resources Strategy & Shared Services",
+      "department": "Human Resources",
+      "management_level": "VP-Level",
+      "email": "fxbilal@kaleidahealth.org",
+      "email_confidence": 95,
+      "phone": null,
+      "mobile_phone": "(919) 917-3215",
+      "linkedin_url": "https://www.linkedin.com/in/fahad-bilal",
+      "location": "Buffalo, New York",
+      "position_start_date": "2025-02-01",
+      "years_in_role": 0,
+      "total_experience": "10-14 years",
+      "persona_match": "HR Strategy VP - HR Technology Leader",
+      "relevance_notes": "NEW HIRE - VP HR Strategy & Shared Services since February 2025. Bachelor from University of Southampton. Previously Global HR Technology & Incentive Pay Senior Leader at Sysco (2022-2025), Head of Global HR Operations Technology at Greystar (2019-2022). Deep HRIS and HR technology background. Key stakeholder for LMS integration, HR technology strategy, and learning technology decisions.",
+      "outreach_priority": 11,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "1669593882",
+      "first_name": "Kevin",
+      "middle_name": "J.",
+      "last_name": "Kimball",
+      "full_name": "Kevin J. Kimball",
+      "title": "Client Services Director, Information Technology",
+      "department": "Information Technology",
+      "management_level": "Director",
+      "email": "kkimball@kaleidahealth.org",
+      "email_confidence": 98,
+      "phone": "(716) 859-8085",
+      "mobile_phone": "(716) 289-2342",
+      "linkedin_url": "https://www.linkedin.com/in/kevin-kimball-1552a629",
+      "location": "Buffalo, New York",
+      "position_start_date": "2023-04-01",
+      "years_in_role": 2,
+      "total_experience": "20-29 years",
+      "persona_match": "IT Client Services - End User Support Leader",
+      "relevance_notes": "Client Services Director since 2023. BS from John Carroll University. Previously VP IT & CIO at Roswell Park (2009-2013), Director IT at Brooks Memorial (2015-2018), Manager IT at Kaleida (2018-2023). Prior CIO experience in healthcare. Owns client-facing IT services and end-user support - key contact for training deployment logistics and help desk support during Epic go-live.",
+      "outreach_priority": 12,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "591810397",
+      "first_name": "Donald",
+      "middle_name": "N.",
+      "last_name": "Boyd",
+      "full_name": "Don Boyd",
+      "title": "President & Chief Executive Officer",
+      "department": "Executive Leadership",
+      "management_level": "C-Level",
+      "email": null,
+      "email_confidence": null,
+      "phone": "(716) 859-8829",
+      "mobile_phone": "(716) 867-4311",
+      "linkedin_url": "https://www.linkedin.com/in/donaldboyd1",
+      "location": "Buffalo, New York",
+      "position_start_date": "2022-07-01",
+      "years_in_role": 3,
+      "total_experience": "6-7 years",
+      "persona_match": "CEO - Ultimate Decision Maker",
+      "relevance_notes": "President & CEO since July 2022. 25-year Kaleida veteran. BA and MBA from University at Buffalo. Previously President & COO (2021-2022), EVP & COO (2019-2022). Led COVID-19 response. Ultimate accountability for Epic implementation success. Note: No email available in ZoomInfo - use phone or LinkedIn.",
+      "outreach_priority": 13,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "-1114543883",
+      "first_name": "Brian",
+      "last_name": "Keating",
+      "full_name": "Brian Keating",
+      "title": "Vice President, Human Resources",
+      "department": "Human Resources",
+      "management_level": "VP-Level",
+      "email": "bkeating@kaleidahealth.org",
+      "email_confidence": 93,
+      "phone": "(716) 859-2834",
+      "mobile_phone": null,
+      "linkedin_url": null,
+      "location": "Buffalo, New York",
+      "position_start_date": "2019-04-01",
+      "years_in_role": 6,
+      "total_experience": "6-7 years",
+      "persona_match": "VP HR - HR Operations Leader",
+      "relevance_notes": "VP Human Resources since 2019. Key HR operations leader reporting to CHRO. Contact for HR policy questions, workforce planning, and training logistics coordination.",
+      "outreach_priority": 14,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "1601892104",
+      "first_name": "Julie",
+      "last_name": "Pollino-Tanner",
+      "full_name": "Julie Pollino-Tanner, RN, MA",
+      "title": "Senior Director, Clinical Education & Practice Professional",
+      "department": "Clinical Education",
+      "management_level": "Director",
+      "email": null,
+      "email_confidence": null,
+      "phone": "(716) 859-5526",
+      "mobile_phone": "(716) 859-1746",
+      "linkedin_url": "https://www.linkedin.com/in/juliepollinotanner",
+      "location": "Buffalo, New York",
+      "position_start_date": "2019-09-01",
+      "years_in_role": 6,
+      "total_experience": "6-7 years",
+      "persona_match": "Clinical Education Director - Nursing Education Leader",
+      "relevance_notes": "Senior Director Clinical Education since 2019. BSN and MA in Nursing Administration from NYU, post-masters certificate in education from UB. Previously Nurse Manager Clinical Education (2018). Prior experience at HSS (2014-2016) and NYU Langone (1998-2007). Owns clinical education programs for nursing staff - key stakeholder for clinical training curriculum and competency verification.",
+      "outreach_priority": 15,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    }
+  ],
+  "contact_summary": {
+    "total_contacts": 15,
+    "primary_personas_found": 6,
+    "email_coverage": "87% (13 of 15 contacts with email)",
+    "decision_maker_coverage": "Excellent - CIO, CMIO, CHIO, CHRO, CEO, CTO plus Epic Implementation Director and EHR Training Manager",
+    "recommended_entry_points": [
+      "Courtney Starnes (CIO) - directly owns Epic implementation, started career at Cerner so understands EHR training deeply",
+      "Leslie Brookins (Sr. Director Epic Implementation) - hired from Saint Luke's specifically for Epic expertise",
+      "Dawn Tymorek (Manager EHR Training) - direct operational owner of Epic training delivery"
+    ],
+    "key_insights": [
+      "Multiple recent hires specifically for Epic implementation: Leslie Brookins (Dec 2024), Jennifer Meyer (Dec 2024), Kristian Feterik (May 2025), Fahad Bilal (Feb 2025)",
+      "CIO Courtney Starnes and Epic Director Leslie Brookins both came from Saint Luke's Health System (Kansas City) - established working relationship",
+      "CHIO Kristian Feterik was Epic Physician Builder at UPMC - direct Epic build experience",
+      "Strong clinical informatics bench: CMIO Peter Winkelstein (11 years), Nursing Informatics Director Jennifer Meyer (11 years clinical informatics experience)"
+    ]
+  },
+  "persona_coverage": {
+    "executive_sponsor_cio": {
+      "found": true,
+      "contact": "Courtney Starnes",
+      "notes": "CIO with deep Cerner background, now leading Epic implementation"
+    },
+    "executive_sponsor_cmio": {
+      "found": true,
+      "contact": "Dr. Peter Winkelstein",
+      "notes": "CMIO since 2014, physician champion for clinical informatics"
+    },
+    "executive_sponsor_chio": {
+      "found": true,
+      "contact": "Dr. Kristian Feterik",
+      "notes": "New CHIO hire (May 2025) with Epic Physician Builder experience from UPMC"
+    },
+    "program_training_manager": {
+      "found": true,
+      "contacts": ["Dawn Tymorek", "Charity Burgio", "Julie Pollino-Tanner"],
+      "notes": "Dawn Tymorek is Manager EHR Training (primary), Charity Burgio is Manager Learning & Performance, Julie Pollino-Tanner is Sr. Director Clinical Education"
+    },
+    "epic_implementation_lead": {
+      "found": true,
+      "contact": "Leslie Brookins",
+      "notes": "Sr. Director Epic Implementation - hired Dec 2024 from Saint Luke's"
+    },
+    "it_learning_technology_manager": {
+      "found": true,
+      "contacts": ["Shawn Lyman", "Beth Rubin", "Kevin Kimball", "Jennifer Meyer"],
+      "notes": "CTO Shawn Lyman, Sr. Director IT Apps Beth Rubin, Client Services Director Kevin Kimball, Nursing Informatics Director Jennifer Meyer"
+    },
+    "hr_executive": {
+      "found": true,
+      "contacts": ["Dr. Ian Barrett", "Fahad Bilal", "Brian Keating"],
+      "notes": "CHRO Ian Barrett, VP HR Strategy Fahad Bilal, VP HR Brian Keating"
+    },
+    "vp_talent_development": {
+      "found": false,
+      "notes": "No specific VP Talent Development title found. Talent development functions appear to be under CHRO Ian Barrett. Manager Learning & Performance Charity Burgio may report to a VP-level leader not identified in ZoomInfo."
+    }
+  },
+  "discovery_notes": "Exceptional contact coverage for Kaleida Health's 13-system Epic consolidation project. The organization has made multiple strategic hires specifically for the Epic implementation: Leslie Brookins (Epic Implementation Director from Saint Luke's), Jennifer Meyer (Nursing Informatics from UPMC), and Kristian Feterik (CHIO from UPMC with Epic Physician Builder experience). The CIO Courtney Starnes brings unique perspective having started her career at Cerner - she understands both vendor and provider sides of EHR implementations. Dawn Tymorek as Manager EHR Training is the direct operational contact for training delivery decisions. The 200-employee Epic implementation team mentioned in research is likely led by Leslie Brookins with Dawn Tymorek managing training specifically. Strong alignment opportunity: CIO and Epic Director both came from Saint Luke's Health System, suggesting they may be open to solutions they've used before.",
+  "data_quality": {
+    "zoominfo_last_updated": "2026-01-29",
+    "email_verification_status": "ZoomInfo verified",
+    "linkedin_match_rate": "93% (14 of 15 contacts)",
+    "mobile_phone_coverage": "93% (14 of 15 contacts)"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "account_id": "TIERAP_007",
+  "company_name": "HCA Healthcare",
+  "domain": "hcahealthcare.com",
+  "discovery_timestamp": "2026-02-02T19:30:00Z",
+  "discovery_source": "ZoomInfo",
+  "contacts": [
+    {
+      "contact_id": "2162801367",
+      "first_name": "Peter",
+      "last_name": "Lindquist",
+      "full_name": "Dr. Peter J. Lindquist",
+      "title": "Vice President & Chief Learning Officer, Corporate (184 Hospitals)",
+      "department": "Human Resources / Learning & Development",
+      "management_level": "C-Level/VP-Level",
+      "email": "peter.lindquist@hcahealthcare.com",
+      "email_confidence": 98,
+      "phone": null,
+      "mobile_phone": "(251) 633-1149",
+      "linkedin_url": "https://www.linkedin.com/in/peter-lindquist-dnp-rn-nea-bc-a9864043",
+      "location": "Nashville, Tennessee",
+      "years_in_role": 2,
+      "total_experience": "20-29 years",
+      "persona_match": "CLO - Primary Decision Maker for Training",
+      "relevance_notes": "Chief Learning Officer overseeing training for 184 hospitals. DNP with nursing background. Previously SVP and Chief Nursing Executive for 28-hospital division. Perfect fit - directly owns enterprise learning and development strategy.",
+      "outreach_priority": 1,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "677412586",
+      "first_name": "Vince",
+      "last_name": "Doyle",
+      "full_name": "Vince Doyle",
+      "title": "Group Chief Information Officer (American)",
+      "department": "Information Technology",
+      "management_level": "C-Level",
+      "email": "vince.doyle@hcahealthcare.com",
+      "email_confidence": 94,
+      "phone": "(843) 936-1450",
+      "mobile_phone": "(850) 764-1520",
+      "linkedin_url": "https://www.linkedin.com/in/vincedoyle",
+      "location": "Coppell, Texas",
+      "years_in_role": 1,
+      "total_experience": "20-29 years",
+      "persona_match": "Group CIO - IT Decision Maker",
+      "relevance_notes": "Group CIO for American division since March 2025. Previously Division CIO. Key stakeholder for MEDITECH Expanse rollout and IT training infrastructure decisions.",
+      "outreach_priority": 2,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "2031070613",
+      "first_name": "Duane",
+      "last_name": "Lovelace",
+      "full_name": "Duane Lovelace",
+      "title": "Division Chief Information Officer, Far West",
+      "department": "Information Technology",
+      "management_level": "C-Level",
+      "email": "duane.lovelace@hcahealthcare.com",
+      "email_confidence": 98,
+      "phone": "(702) 961-0500",
+      "mobile_phone": "(951) 788-3613",
+      "linkedin_url": "https://www.linkedin.com/in/duanelovelace",
+      "location": "Henderson, Nevada",
+      "years_in_role": 14,
+      "total_experience": "30-39 years",
+      "persona_match": "Division CIO - Regional IT Leader",
+      "relevance_notes": "Long-tenured Division CIO (since 2011) for Far West region including Las Vegas where new Center for Clinical Advancement opened September 2025. Key regional stakeholder.",
+      "outreach_priority": 3,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "3113258473",
+      "first_name": "Paul",
+      "last_name": "Klein",
+      "full_name": "Paul Klein",
+      "title": "Chief Information Officer, HCA Midwest",
+      "department": "Information Technology",
+      "management_level": "C-Level",
+      "email": "paul.klein@hcahealthcare.com",
+      "email_confidence": 92,
+      "phone": null,
+      "mobile_phone": null,
+      "linkedin_url": null,
+      "location": null,
+      "years_in_role": null,
+      "total_experience": "6-7 years",
+      "persona_match": "Division CIO - Regional IT Leader",
+      "relevance_notes": "CIO for HCA Midwest division. Regional stakeholder for MEDITECH Expanse training in Midwest hospitals.",
+      "outreach_priority": 4,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    }
+  ],
+  "contact_summary": {
+    "total_contacts": 4,
+    "primary_personas_found": 4,
+    "email_coverage": "100%",
+    "decision_maker_coverage": "Strong - CLO (primary), Group CIO, 2 Division CIOs",
+    "recommended_entry_point": "Peter Lindquist (CLO) - directly owns enterprise learning for 184 hospitals"
+  },
+  "discovery_notes": "Peter Lindquist as Chief Learning Officer is the ideal primary contact - he owns training strategy for the entire enterprise. His nursing background (DNP) and prior experience as Chief Nursing Executive means he understands clinical training needs. Secondary path through IT leadership (Vince Doyle, Duane Lovelace) for EHR training specifically. Note: Marty Paslick (SVP & CIO mentioned in research) not found in ZoomInfo search - may require direct outreach."
+}

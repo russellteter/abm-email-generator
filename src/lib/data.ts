@@ -10,9 +10,13 @@ import type {
   SendersConfig,
 } from './types';
 
-// Base path from abm-email-generator to campaign-data
+// Base path to campaign data
+// On Vercel: use bundled ./data directory
+// Locally: use ../campaign-data (parent directory)
 function getCampaignDataPath(...segments: string[]): string {
-  return path.join(process.cwd(), '..', 'campaign-data', ...segments);
+  const isVercel = process.env.VERCEL === '1';
+  const basePath = isVercel ? 'data' : path.join('..', 'campaign-data');
+  return path.join(process.cwd(), basePath, ...segments);
 }
 
 // ============ Account Loaders ============

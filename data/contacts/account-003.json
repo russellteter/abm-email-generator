@@ -1,0 +1,245 @@
+{
+  "account_id": "TIERAP_003",
+  "company_name": "SSM Health",
+  "domain": "ssmhealth.com",
+  "discovery_timestamp": "2026-02-02T20:15:00Z",
+  "discovery_source": "ZoomInfo",
+  "contacts": [
+    {
+      "contact_id": "1630082641",
+      "first_name": "Anne",
+      "last_name": "Cappellari",
+      "full_name": "Dr. Anne Cappellari",
+      "title": "Chief Medical Information Officer & Vice President, System",
+      "department": "Information Technology / Clinical Informatics",
+      "management_level": "C-Level",
+      "email": "cappellari.ann@ssmhealth.com",
+      "email_confidence": 92,
+      "phone": "(314) 989-2484",
+      "mobile_phone": "(314) 397-6277",
+      "linkedin_url": "https://www.linkedin.com/in/ann-cappellari-md-41241736",
+      "location": "St. Louis, Missouri",
+      "years_in_role": 8,
+      "total_experience": "20-29 years",
+      "persona_match": "CMIO - Executive Sponsor / Clinical Champion",
+      "relevance_notes": "System CMIO since 2018 with MD background (Medical College of Wisconsin). Previously Chief of Staff at SSM Health. Emergency medicine physician background brings clinical credibility. Direct stakeholder for Epic optimization and clinical informatics training. Key partner for Project One clinical workflow standardization.",
+      "personalization_hooks": [
+        "MD background brings clinical credibility to training decisions",
+        "8+ years at SSM Health provides deep institutional knowledge",
+        "Emergency medicine experience means understanding of high-pressure training needs",
+        "System-wide role means influence across all four states"
+      ],
+      "outreach_priority": 1,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "2081040131",
+      "first_name": "Thomas",
+      "last_name": "Langston",
+      "full_name": "Thomas K. Langston",
+      "title": "Senior Vice President - Chief Information Officer",
+      "department": "Information Technology",
+      "management_level": "C-Level",
+      "email": "tom_langston@ssmhc.com",
+      "email_confidence": 98,
+      "phone": "(314) 994-7900",
+      "mobile_phone": "(314) 768-5160",
+      "linkedin_url": "https://www.linkedin.com/in/tom-langston-b4197a20",
+      "location": "St. Louis, Missouri",
+      "years_in_role": 40,
+      "total_experience": "40-49 years",
+      "persona_match": "CIO - Executive Sponsor",
+      "relevance_notes": "Long-tenured SVP CIO (since 1981). MBA from St. Louis University. Deep institutional knowledge spanning decades of SSM Health IT transformation. Reports to CDIO Saad Chaudhry's organizational structure. Key stakeholder for infrastructure and technology decisions supporting Project One.",
+      "personalization_hooks": [
+        "40+ years at SSM Health - unmatched institutional knowledge",
+        "Has seen multiple EHR transitions and optimizations",
+        "University of Missouri + St. Louis University education - local connections",
+        "Long tenure means relationships across all regions"
+      ],
+      "outreach_priority": 3,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "3450719301",
+      "first_name": "Amber",
+      "last_name": "Wood",
+      "full_name": "Amber L. Wood, DNP, RN, MBA",
+      "title": "Vice President, Clinical Education & Clinical Placement",
+      "department": "Clinical Education",
+      "management_level": "VP-Level",
+      "email": "amber_wood@ssmhealth.com",
+      "email_confidence": 94,
+      "phone": "(314) 523-8789",
+      "mobile_phone": "(314) 989-2449",
+      "linkedin_url": "https://www.linkedin.com/in/amber-wood-dnp-rn-mba-a7285213",
+      "location": "St. Louis, Missouri",
+      "years_in_role": 10,
+      "total_experience": "15-19 years",
+      "persona_match": "VP Clinical Education - Program Manager / Training Champion",
+      "relevance_notes": "VP of Clinical Education since 2014 - direct owner of clinical training programs system-wide. DNP + MBA credentials demonstrate clinical and business acumen. Oversees clinical placement coordination - understands workforce development needs. Perfect fit for training solution discussions. Would be directly impacted by Project One training requirements.",
+      "personalization_hooks": [
+        "DNP + MBA dual credentials - speaks both clinical and business language",
+        "10 years leading clinical education at SSM Health",
+        "Clinical placement oversight means relationships with nursing schools",
+        "System-wide role during Project One = massive training transformation opportunity"
+      ],
+      "outreach_priority": 2,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "1936508366",
+      "first_name": "Bronwyn",
+      "last_name": "King",
+      "full_name": "Bronwyn King",
+      "title": "EHR Training & Clinical Informatics Training Lead",
+      "department": "Clinical Informatics / Training",
+      "management_level": "Non-Manager",
+      "email": "bronwyn_king@ssmhc.com",
+      "email_confidence": 94,
+      "phone": "(314) 951-5468",
+      "mobile_phone": "(314) 578-3894",
+      "linkedin_url": "https://www.linkedin.com/in/bronwyn-king-16789141",
+      "location": "St. Louis, Missouri",
+      "years_in_role": 6,
+      "total_experience": "20-29 years",
+      "persona_match": "Epic Credentialed Trainer / Instructor",
+      "relevance_notes": "EHR Training Lead with direct Epic training delivery responsibility. Previously Credentialed Trainer at SSM Health (2012-2018). Tulane BA with 20+ years experience. Perfect contact for understanding current training delivery challenges with 8 Epic updates in 30 days. Ground-level insight into Project One training needs.",
+      "personalization_hooks": [
+        "Former Epic Credentialed Trainer - deep Epic training expertise",
+        "EHR Training Lead role - owns training delivery execution",
+        "6 years in current role spanning major Epic optimizations",
+        "Direct experience with rapid-cycle training deployment"
+      ],
+      "outreach_priority": 5,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "-1941509944",
+      "first_name": "Jeana",
+      "last_name": "Nordike",
+      "full_name": "Jeana Nordike, DNP",
+      "title": "Director, Clinical Education",
+      "department": "Clinical Education",
+      "management_level": "Director",
+      "email": "jeana.nordike@ssmhealth.com",
+      "email_confidence": 93,
+      "phone": "(314) 989-3593",
+      "mobile_phone": "(618) 806-3696",
+      "linkedin_url": "https://www.linkedin.com/in/jeana-nordike-413494114",
+      "location": "Trenton, Illinois",
+      "years_in_role": 2,
+      "total_experience": "20-29 years",
+      "persona_match": "Director of Clinical Education - Program Manager",
+      "relevance_notes": "Director of Clinical Education since March 2024. DNP from McKendree University. 15+ years at SSM Health in progressive clinical education roles (Education Consultant -> Regional Manager -> Senior Manager -> Director). Deep institutional knowledge of training operations across Illinois region. Direct report to VP Clinical Education.",
+      "personalization_hooks": [
+        "DNP credential - clinical doctorate demonstrates advanced education",
+        "15+ years at SSM Health across multiple clinical education roles",
+        "Progressive career path shows institutional investment",
+        "Illinois region base - understands multi-state coordination challenges"
+      ],
+      "outreach_priority": 4,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "16247678659",
+      "first_name": "Beth",
+      "last_name": "Moore",
+      "full_name": "Beth Moore, DNP, RN",
+      "title": "Manager, Simulation & Training Center",
+      "department": "Clinical Education / Simulation",
+      "management_level": "Manager",
+      "email": "beth_moore@ssmhc.com",
+      "email_confidence": 75,
+      "phone": null,
+      "mobile_phone": null,
+      "linkedin_url": "https://www.linkedin.com/in/beth-moore-rn90",
+      "location": "St. Louis, Missouri",
+      "years_in_role": 7,
+      "total_experience": "30-39 years",
+      "persona_match": "Simulation Center Manager - Training Innovation Lead",
+      "relevance_notes": "Manager of SSM Health Simulation & Training Center since 2019. DNP from Saint Louis University. Pioneered VR training program at SSM Health. Quoted in SSM Health newsroom: 'VR is not meant to replace in-person training but enhance and work with it. VR gives the opportunity to work remotely and have multiple learners from different locations working in the same simulation.' Key contact for understanding training innovation receptivity.",
+      "personalization_hooks": [
+        "VR training pioneer at SSM Health - quoted in newsroom",
+        "DNP from Saint Louis University - local academic connections",
+        "30+ years healthcare experience including NICU background",
+        "Leads simulation expansion from St. Louis to Illinois"
+      ],
+      "outreach_priority": 6,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "1494299176",
+      "first_name": "Melinda",
+      "last_name": "Thompson",
+      "full_name": "Melinda Thompson, BSN",
+      "title": "Regional Manager, Clinical Education",
+      "department": "Clinical Education",
+      "management_level": "Manager",
+      "email": "melthompson@ssmhealth.com",
+      "email_confidence": 89,
+      "phone": "(608) 259-5339",
+      "mobile_phone": "(608) 438-6133",
+      "linkedin_url": "https://www.linkedin.com/in/melinda-thompson-5a2814142",
+      "location": "Madison, Wisconsin",
+      "years_in_role": 2,
+      "total_experience": "20-29 years",
+      "persona_match": "Regional Clinical Education Manager - Program Manager",
+      "relevance_notes": "Regional Manager for Clinical Education in Wisconsin since September 2023. BSN from UW-Milwaukee. Previously Perioperative Nurse Educator and Clinical Instructor at Madison College. Wisconsin region perspective on multi-state training coordination. Similar role to Mel Thompson mentioned in research (may be same person).",
+      "personalization_hooks": [
+        "Wisconsin regional perspective on training coordination",
+        "Perioperative nursing background - surgical services focus",
+        "Academic experience as Clinical Instructor",
+        "Recent promotion to regional manager - building credibility"
+      ],
+      "outreach_priority": 7,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    }
+  ],
+  "contact_summary": {
+    "total_contacts": 7,
+    "primary_personas_found": 5,
+    "executive_sponsors": 2,
+    "program_managers": 3,
+    "training_practitioners": 2,
+    "email_coverage": "100%",
+    "decision_maker_coverage": "Strong - CMIO, SVP CIO, VP Clinical Education, Director Clinical Education",
+    "geographic_coverage": "3 of 4 states represented (Missouri, Illinois, Wisconsin)",
+    "recommended_entry_point": "Anne Cappellari (CMIO) - clinical champion with 8 years institutional knowledge, or Amber Wood (VP Clinical Education) - direct owner of training programs"
+  },
+  "discovery_notes": "Excellent contact coverage with strong representation across clinical informatics and clinical education leadership. Note: Research mentioned Saad Chaudhry (CDIO) starting June 2024, but ZoomInfo search did not return him - may need direct outreach via LinkedIn. Beth Moore is VR training pioneer quoted in SSM Health newsroom. Amber Wood and Jeana Nordike own clinical education programs that would be directly impacted by Project One training requirements. Bronwyn King provides ground-level insight into EHR training delivery challenges.",
+  "research_alignment": {
+    "project_one_stakeholders": ["Anne Cappellari", "Thomas Langston", "Amber Wood"],
+    "vr_training_innovation": ["Beth Moore"],
+    "epic_training_delivery": ["Bronwyn King"],
+    "multi_state_coordination": ["Jeana Nordike (Illinois)", "Melinda Thompson (Wisconsin)"],
+    "8_updates_in_30_days_impact": ["Bronwyn King", "Amber Wood", "Jeana Nordike"]
+  },
+  "missing_contacts": {
+    "saad_chaudhry": {
+      "title": "Chief Digital and Information Officer",
+      "note": "Primary executive sponsor from research not found in ZoomInfo. Started June 2024. Recommend LinkedIn outreach.",
+      "linkedin_url": "https://www.linkedin.com/in/saadchaudhry"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "senders": [
+    {
+      "sender_id": "michael-chasen",
+      "name": "Michael Chasen",
+      "title": "CEO",
+      "company": "Class Technologies",
+      "email": "michael@class.com",
+      "role": "ceo",
+      "voice_profile": {
+        "description": "Warm executive introduction - creates 'Oh shoot, the CEO emailed me' reaction",
+        "posture": "Peer who sees natural connection, not informed outsider showing homework",
+        "tone": "Warm, curious, personally invested - not strategic or metric-focused",
+        "perspective": "Founder with personal investment in the mission",
+        "focus": "Genuine connection, personal story, thought partnership",
+        "formality": "Professional but warm, peer-to-peer",
+        "cta_style": "Warm invitation to connect, not meeting request"
+      },
+      "signature": "Michael Chasen\nCEO, Class Technologies",
+      "background_context": "Founded Blackboard in 1997, pioneered ed-tech industry, bringing that same transformation to healthcare training",
+      "story_elements": [
+        "When I was building Blackboard, we faced...",
+        "I built Class because...",
+        "After 25 years in education technology, I've seen...",
+        "The pattern I keep seeing is..."
+      ],
+      "credibility_points": [
+        "Founded Blackboard, served 20M+ learners globally",
+        "Deep understanding of enterprise training challenges",
+        "Built Class specifically for professional live training at scale"
+      ],
+      "email_lengths": {
+        "medium": {
+          "target_words": 115,
+          "min_words": 100,
+          "max_words": 130
+        },
+        "long": {
+          "target_words": 175,
+          "min_words": 150,
+          "max_words": 200
+        }
+      },
+      "cta_patterns": {
+        "allowed": [
+          "I'd love to meet you.",
+          "Would you be open to connecting?",
+          "I'd welcome the chance to hear your perspective.",
+          "If this resonates, I'd enjoy connecting.",
+          "I'd love to hear how you're thinking about this."
+        ],
+        "banned": [
+          "Worth 15 minutes?",
+          "Worth exploring?",
+          "Should I send the case study?",
+          "Quick call or just send info?",
+          "Got 15 minutes this week?"
+        ]
+      },
+      "three_part_structure": {
+        "part_1": "Connection Point (1-2 sentences) - WHY reaching out to THEM",
+        "part_2": "Personal Why (2-3 sentences) - Founder journey and why Class exists",
+        "part_3": "Invitation (1 sentence) - Warm invitation to connect"
+      }
+    },
+    {
+      "sender_id": "dalton-mullins",
+      "name": "Dalton Mullins",
+      "title": "Sales Development Representative",
+      "company": "Class Technologies",
+      "email": "dalton@class.com",
+      "role": "sdr",
+      "voice_profile": {
+        "description": "Curious helper - conversational, question-forward, genuinely interested",
+        "posture": "Curious professional who asks good questions",
+        "tone": "Conversational, warm, uses contractions aggressively",
+        "perspective": "Practitioner who's been researching this problem",
+        "focus": "Questions over statements, practical curiosity",
+        "formality": "Casual professional, first-name basis",
+        "cta_style": "Low-pressure, easy to reply, offers flexibility"
+      },
+      "signature": "Dalton",
+      "signature_note": "First name only in signature, not full title",
+      "background_context": "Specializes in healthcare training solutions, understands the unique challenges of clinical education",
+      "credibility_points": [
+        "Works exclusively with healthcare organizations",
+        "Deep knowledge of EHR training challenges",
+        "Can connect you with relevant case studies and references"
+      ],
+      "email_lengths": {
+        "medium": {
+          "target_words": 100,
+          "min_words": 85,
+          "max_words": 115
+        },
+        "long": {
+          "target_words": 157,
+          "min_words": 140,
+          "max_words": 175
+        }
+      },
+      "cta_patterns": {
+        "primary": [
+          "Would you be up for comparing notes?",
+          "Open to a quick call?",
+          "Happy to share more over email if that's easier.",
+          "Hit reply if I'm in the right ballpark."
+        ],
+        "avoid": [
+          "I'd appreciate 15 minutes to learn...",
+          "Would a 15-minute call make sense?",
+          "Let me know when works for you"
+        ]
+      },
+      "authenticity_rules": [
+        "Use contractions aggressively: I'm, you're, that's, it's",
+        "2-3 questions per email",
+        "Start sentences with 'And' or 'But' for conversational rhythm",
+        "Never say 'I am curious' - say 'I'm curious' or just ask the question",
+        "First name signature only"
+      ]
+    }
+  ],
+  "variant_matrix": {
+    "description": "4 variants per account: 2 lengths × 2 senders (short variants removed)",
+    "version": "2.0",
+    "total_variants_per_account": 4,
+    "variants": [
+      {"id_suffix": "medium-ceo", "length": "medium", "sender": "michael-chasen"},
+      {"id_suffix": "long-ceo", "length": "long", "sender": "michael-chasen"},
+      {"id_suffix": "medium-sdr", "length": "medium", "sender": "dalton-mullins"},
+      {"id_suffix": "long-sdr", "length": "long", "sender": "dalton-mullins"}
+    ],
+    "removed_in_v2": [
+      {"id_suffix": "short-ceo", "reason": "Too abrupt for meaningful CEO connection"},
+      {"id_suffix": "short-sdr", "reason": "Too abrupt for meaningful SDR connection"}
+    ]
+  },
+  "variant_differentiation": {
+    "description": "Each variant must use DIFFERENT primary research facts",
+    "mapping": {
+      "medium-ceo": {
+        "primary_focus": "Strategic initiative",
+        "angle": "Big picture opportunity",
+        "structure": "3-part CEO introduction"
+      },
+      "long-ceo": {
+        "primary_focus": "Strategic + personal story",
+        "angle": "Thought partnership",
+        "structure": "3-part CEO introduction with expanded personal why",
+        "warmth_required": true
+      },
+      "medium-sdr": {
+        "primary_focus": "Operational challenge as question",
+        "angle": "Practical curiosity",
+        "structure": "Question-forward with value hint"
+      },
+      "long-sdr": {
+        "primary_focus": "Hypothesis + what we don't know",
+        "angle": "Collaborative exploration",
+        "structure": "Question-forward with multiple angles",
+        "warmth_required": true
+      }
+    },
+    "rule": "No fact appears as primary opener in more than ONE variant per account"
+  }
+}

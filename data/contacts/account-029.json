@@ -1,0 +1,113 @@
+{
+  "account_id": "TIERAP_029",
+  "company_name": "Billings Clinic",
+  "domain": "billingsclinic.com",
+  "discovery_timestamp": "2026-02-02T19:30:00Z",
+  "discovery_source": "ZoomInfo",
+  "contacts": [
+    {
+      "contact_id": "445530166",
+      "first_name": "Christopher",
+      "last_name": "Stevens",
+      "full_name": "Christopher Stevens",
+      "title": "Vice President & Chief Information Officer",
+      "department": "Information Technology",
+      "management_level": "C-Level/VP-Level",
+      "email": "chris.stevens@billingsclinic.com",
+      "email_confidence": 98,
+      "phone": "(406) 657-3840",
+      "mobile_phone": "(406) 697-9062",
+      "linkedin_url": "https://www.linkedin.com/in/chris-stevens-22a84210",
+      "location": "Billings, Montana",
+      "years_in_role": 29,
+      "total_experience": "20-29 years",
+      "persona_match": "CIO - Primary Decision Maker",
+      "relevance_notes": "Long-tenured CIO since 1996. Note: Research mentions Justin Ott as CIO who led Oracle Health decision - Chris Stevens may be predecessor or different role. Verify current CIO before outreach. Key stakeholder for Oracle Health EHR training.",
+      "outreach_priority": 2,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "2616487420",
+      "first_name": "Randy",
+      "last_name": "Thompson",
+      "full_name": "Dr. Randy Thompson",
+      "title": "Chief Medical Information Officer (CMIO)",
+      "department": "Clinical Informatics",
+      "management_level": "C-Level",
+      "email": "dthompson@billingsclinic.org",
+      "email_confidence": 99,
+      "phone": "(406) 435-6813",
+      "mobile_phone": "(406) 238-2355",
+      "linkedin_url": "https://www.linkedin.com/in/randy-thompson-12167289",
+      "location": "Billings, Montana",
+      "years_in_role": 10,
+      "total_experience": "20-29 years",
+      "persona_match": "CMIO/CHAO - Primary Clinical Champion",
+      "relevance_notes": "CMIO since 2014, also Chief Health Analytics Officer (CHAO). MD with MSPA from Northwestern. Previously interim CIO. Leads AI governance - quoted in research on building clinician trust in AI outputs. Key clinical champion for Oracle Health training.",
+      "outreach_priority": 1,
+      "do_not_call": {
+        "direct": false,
+        "mobile": false
+      }
+    },
+    {
+      "contact_id": "5872477817",
+      "first_name": "Jessica",
+      "last_name": "Cozzens",
+      "full_name": "Dr. Jessica Dawn Cozzens",
+      "title": "Chief Medical Informatics Officer",
+      "department": "Clinical Informatics",
+      "management_level": "C-Level",
+      "email": "jcozzens@billingsclinic.org",
+      "email_confidence": 98,
+      "phone": "(406) 435-2966",
+      "mobile_phone": "(406) 281-4301",
+      "linkedin_url": "https://www.linkedin.com/in/jessica-cozzens-001a833b",
+      "location": "Billings, Montana",
+      "years_in_role": 9,
+      "total_experience": "10-14 years",
+      "persona_match": "CMIO - Clinical Informatics Leader",
+      "relevance_notes": "CMIO since 2015. MD with MPH. Family physician background. Key clinical stakeholder for EHR workflows and training content validation.",
+      "outreach_priority": 3,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    },
+    {
+      "contact_id": "9677228384",
+      "first_name": "Ashley",
+      "last_name": "Dennis",
+      "full_name": "Dr. Ashley Dennis",
+      "title": "Director, Office of Medical Education",
+      "department": "Medical Education",
+      "management_level": "Director",
+      "email": "adennis@billingsclinic.org",
+      "email_confidence": 98,
+      "phone": "(406) 657-4240",
+      "mobile_phone": "(406) 222-4782",
+      "linkedin_url": "https://www.linkedin.com/in/ashley-dennis-81277610",
+      "location": "Billings, Montana",
+      "years_in_role": 7,
+      "total_experience": "10-14 years",
+      "persona_match": "Medical Education Director - Training Champion",
+      "relevance_notes": "Director of Medical Education since 2017. PhD from University of St. Andrews. Previously lecturer at University of Dundee Centre for Medical Education. Key stakeholder for CME delivery and BC CME division initiatives including Primary Care Symposium.",
+      "outreach_priority": 4,
+      "do_not_call": {
+        "direct": false,
+        "mobile": true
+      }
+    }
+  ],
+  "contact_summary": {
+    "total_contacts": 4,
+    "primary_personas_found": 4,
+    "email_coverage": "100%",
+    "decision_maker_coverage": "Strong - CIO, CMIO/CHAO, CMIO, Director Medical Education",
+    "recommended_entry_point": "Randy Thompson (CMIO/CHAO) - leads AI governance, quoted extensively in research, owns clinical informatics"
+  },
+  "discovery_notes": "Dr. Randy Thompson is the ideal primary contact - his quotes in research about governance and clinician trust in AI outputs demonstrate thought leadership. Note potential CIO discrepancy: research mentions Justin Ott as CIO who led Oracle Health vendor selection, but ZoomInfo shows Chris Stevens as VP & CIO. May be leadership transition or organizational structure - verify before outreach. Ashley Dennis (Director, Medical Education) is excellent secondary contact for CME/training programs."
+}
