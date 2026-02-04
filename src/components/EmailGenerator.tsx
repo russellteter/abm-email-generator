@@ -131,7 +131,9 @@ export default function EmailGenerator({
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
-      throw new Error(errorData.error || `HTTP ${response.status}`);
+      // Show detailed error including API billing issues
+      const errorMessage = errorData.details || errorData.error || `HTTP ${response.status}`;
+      throw new Error(errorMessage);
     }
 
     // Stream and accumulate the response

@@ -8,13 +8,16 @@
  */
 
 import { anthropic } from '@ai-sdk/anthropic';
-import { streamText } from 'ai';
+import { generateText, streamText } from 'ai';
 import { NextResponse } from 'next/server';
 import {
   safeValidateRequest,
   buildSystemPrompt,
   buildUserPrompt,
 } from '@/lib/email-generator';
+
+// Set to true to use non-streaming for debugging
+const DEBUG_MODE = false;
 
 export const runtime = 'nodejs';
 export const maxDuration = 60; // Allow up to 60s for generation
@@ -46,7 +49,46 @@ export async function POST(req: Request) {
     const modelId = config?.model ?? 'claude-sonnet-4-20250514';
     const temperature = config?.temperature ?? 0.7;
 
-    // Stream response from Claude
+    // Log generation request
+    console.log('Starting email generation for:', account.company_name, contact.full_name);
+    console.log('Using model:', modelId);
+
+    if (DEBUG_MODE) {
+      // Non-streaming mode for debugging
+      try {
+        const result = await generateText({
+          model: anthropic(modelId),
+          system: systemPrompt,
+          messages: [{ role: 'user', content: userPrompt }],
+          maxOutputTokens: 4000,
+          temperature,
+        });
+
+        console.log('Generation complete. Response length:', result.text?.length ?? 0);
+        console.log('Finish reason:', result.finishReason);
+
+        if (!result.text || result.text.length === 0) {
+          console.error('ERROR: Empty response from Claude');
+          return NextResponse.json(
+            { error: 'Empty response from AI model' },
+            { status: 500 }
+          );
+        }
+
+        // Return the text directly as the response body
+        return new Response(result.text, {
+          headers: { 'Content-Type': 'text/plain' },
+        });
+      } catch (genError) {
+        console.error('Generation error:', genError);
+        return NextResponse.json(
+          { error: 'Generation failed', details: String(genError) },
+          { status: 500 }
+        );
+      }
+    }
+
+    // Streaming mode (production)
     const result = streamText({
       model: anthropic(modelId),
       system: systemPrompt,
@@ -55,7 +97,6 @@ export async function POST(req: Request) {
       temperature,
     });
 
-    // Return streaming response
     return result.toTextStreamResponse();
   } catch (error) {
     console.error('Email generation error:', error);
