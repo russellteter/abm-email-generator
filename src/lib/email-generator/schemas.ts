@@ -115,8 +115,8 @@ export const ContactInputSchema = z.object({
   full_name: z.string().min(1).describe('Contact full name'),
   first_name: z.string().min(1).describe('Contact first name'),
   title: z.string().min(1).describe('Job title'),
-  // Email is permissive - accepts any string including empty for incomplete data
-  email: z.string().describe('Contact email (permissive for incomplete data)'),
+  // Email is permissive - accepts any string, null, or empty for incomplete data
+  email: z.string().nullable().default('').describe('Contact email (permissive for incomplete data)'),
 
   // Persona classification - allow empty string for missing data
   persona_match: z.string().default('').describe('Persona type (IT/Digital Leader, Clinical/Education Leader, etc.)'),

@@ -1,16 +1,68 @@
 /**
- * In-memory storage for saved email sequences
+ * File-based storage for saved email sequences
  *
- * Uses a Map that survives between requests in the same server instance.
- * Note: Data will be lost on server restart or cold start (Vercel).
- * For persistent storage, Phase 10 can add database or Vercel KV.
+ * Uses a JSON file for persistence during development.
+ * This ensures data survives page reloads and module recompilations.
+ * For production, consider Vercel KV or database storage.
  */
 
 import type { SavedEmail, SavedEmailMetadata } from './types';
 import type { EmailSequence } from './email-generator/schemas';
+import * as fs from 'fs';
+import * as path from 'path';
 
-// In-memory storage - survives between requests in same instance
-const emailStore = new Map<string, SavedEmail>();
+// Storage file path - in data directory for persistence
+const STORAGE_FILE = path.join(process.cwd(), 'data', 'saved-emails.json');
+
+// In-memory cache backed by file storage
+let emailStore: Map<string, SavedEmail> | null = null;
+
+/**
+ * Load emails from file storage
+ */
+function loadFromFile(): Map<string, SavedEmail> {
+  if (emailStore !== null) {
+    return emailStore;
+  }
+
+  emailStore = new Map<string, SavedEmail>();
+
+  try {
+    if (fs.existsSync(STORAGE_FILE)) {
+      const data = fs.readFileSync(STORAGE_FILE, 'utf-8');
+      const parsed = JSON.parse(data) as Record<string, SavedEmail>;
+      for (const [id, email] of Object.entries(parsed)) {
+        emailStore.set(id, email);
+      }
+    }
+  } catch (error) {
+    console.error('Failed to load saved emails:', error);
+  }
+
+  return emailStore;
+}
+
+/**
+ * Save emails to file storage
+ */
+function saveToFile(): void {
+  const store = loadFromFile();
+  const data: Record<string, SavedEmail> = {};
+  for (const [id, email] of store.entries()) {
+    data[id] = email;
+  }
+
+  try {
+    // Ensure directory exists
+    const dir = path.dirname(STORAGE_FILE);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(STORAGE_FILE, JSON.stringify(data, null, 2));
+  } catch (error) {
+    console.error('Failed to save emails to file:', error);
+  }
+}
 
 /**
  * Input data for saving a new email sequence
@@ -29,6 +81,7 @@ export interface SaveEmailInput {
  * @returns The saved email with generated ID and timestamps
  */
 export function saveEmail(data: SaveEmailInput): SavedEmail {
+  const store = loadFromFile();
   const id = crypto.randomUUID();
   const now = new Date().toISOString();
 
@@ -44,7 +97,8 @@ export function saveEmail(data: SaveEmailInput): SavedEmail {
     updatedAt: now,
   };
 
-  emailStore.set(id, saved);
+  store.set(id, saved);
+  saveToFile();
   return saved;
 }
 
@@ -53,7 +107,8 @@ export function saveEmail(data: SaveEmailInput): SavedEmail {
  * @returns The saved email or null if not found
  */
 export function getEmail(id: string): SavedEmail | null {
-  return emailStore.get(id) ?? null;
+  const store = loadFromFile();
+  return store.get(id) ?? null;
 }
 
 /**
@@ -62,7 +117,8 @@ export function getEmail(id: string): SavedEmail | null {
  * @returns Array of saved email metadata (without full email content)
  */
 export function listEmails(accountIndex?: number): SavedEmailMetadata[] {
-  const emails = Array.from(emailStore.values());
+  const store = loadFromFile();
+  const emails = Array.from(store.values());
 
   // Filter by account if specified
   const filtered = accountIndex !== undefined
@@ -88,19 +144,26 @@ export function listEmails(accountIndex?: number): SavedEmailMetadata[] {
  * @returns true if deleted, false if not found
  */
 export function deleteEmail(id: string): boolean {
-  return emailStore.delete(id);
+  const store = loadFromFile();
+  const deleted = store.delete(id);
+  if (deleted) {
+    saveToFile();
+  }
+  return deleted;
 }
 
 /**
  * Get the count of saved emails
  */
 export function getEmailCount(): number {
-  return emailStore.size;
+  const store = loadFromFile();
+  return store.size;
 }
 
 /**
  * Clear all saved emails (useful for testing)
  */
 export function clearAllEmails(): void {
-  emailStore.clear();
+  emailStore = new Map();
+  saveToFile();
 }

@@ -30,10 +30,13 @@ export async function POST(req: Request) {
     // Validate request against schema
     const validation = safeValidateRequest(body);
     if (!validation.success) {
+      const flatErrors = validation.error.flatten();
+      console.error('Validation failed:', JSON.stringify(flatErrors, null, 2));
+      console.error('Request body was:', JSON.stringify(body, null, 2));
       return NextResponse.json(
         {
           error: 'Invalid request body',
-          details: validation.error.flatten(),
+          details: flatErrors,
         },
         { status: 400 }
       );

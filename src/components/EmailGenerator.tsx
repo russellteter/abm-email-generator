@@ -132,7 +132,23 @@ export default function EmailGenerator({
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
       // Show detailed error including API billing issues
-      const errorMessage = errorData.details || errorData.error || `HTTP ${response.status}`;
+      // Handle case where details might be an object (Zod validation errors)
+      let errorMessage: string;
+      if (typeof errorData.details === 'string') {
+        errorMessage = errorData.details;
+      } else if (errorData.details) {
+        // Zod flattened errors - extract field errors
+        const fieldErrors = errorData.details.fieldErrors;
+        if (fieldErrors && Object.keys(fieldErrors).length > 0) {
+          errorMessage = Object.entries(fieldErrors)
+            .map(([field, msgs]) => `${field}: ${(msgs as string[]).join(', ')}`)
+            .join('; ');
+        } else {
+          errorMessage = errorData.error || 'Validation failed';
+        }
+      } else {
+        errorMessage = errorData.error || `HTTP ${response.status}`;
+      }
       throw new Error(errorMessage);
     }
 
