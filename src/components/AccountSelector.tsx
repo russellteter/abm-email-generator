@@ -8,22 +8,9 @@ interface AccountSelectorProps {
   onSelect: (index: number | null) => void;
 }
 
-// Sort accounts by tier (A+ first, then A, then B) then by name
+// Sort accounts alphabetically by company name
 function sortAccounts(accounts: AccountListItem[]): AccountListItem[] {
-  const tierOrder: Record<string, number> = {
-    'A+': 1,
-    'A': 2,
-    'B': 3,
-  };
-
   return [...accounts].sort((a, b) => {
-    const tierA = tierOrder[a.tier] ?? 99;
-    const tierB = tierOrder[b.tier] ?? 99;
-
-    if (tierA !== tierB) {
-      return tierA - tierB;
-    }
-
     return a.company_name.localeCompare(b.company_name);
   });
 }
@@ -63,7 +50,7 @@ export default function AccountSelector({
         </option>
         {sortedAccounts.map((account) => (
           <option key={account.index} value={account.index}>
-            {account.company_name} — {account.tier} — {account.ehr_system}
+            {account.company_name}
           </option>
         ))}
       </select>

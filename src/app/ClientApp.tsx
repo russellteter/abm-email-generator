@@ -232,6 +232,7 @@ export default function ClientApp({ accounts }: ClientAppProps) {
             <div className="space-y-6">
               {Array.from(generatedEmails.entries()).map(([contactId, emails]) => {
                 const contact = contacts.find(c => c.contact_id === contactId);
+                const fullContact = fullContactsData.find(c => c.contact_id === contactId);
                 return (
                   <EmailSequenceDisplay
                     key={contactId}
@@ -239,6 +240,8 @@ export default function ClientApp({ accounts }: ClientAppProps) {
                     contactId={contactId}
                     contactName={contact?.full_name ?? 'Unknown Contact'}
                     contactTitle={contact?.title ?? ''}
+                    contactEmail={fullContact?.email ?? contact?.email ?? ''}
+                    contactPhone={fullContact?.phone ?? null}
                     accountName={selectedAccount?.company_name ?? ''}
                     emails={emails}
                   />

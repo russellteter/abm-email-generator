@@ -19,8 +19,10 @@ export default async function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="mx-auto max-w-6xl px-6 py-8">
-        <ClientApp accounts={accounts} />
+      <main className="mx-auto max-w-[1600px] px-6 py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-6">
+          <ClientApp accounts={accounts} />
+        </div>
       </main>
 
       {/* Footer */}

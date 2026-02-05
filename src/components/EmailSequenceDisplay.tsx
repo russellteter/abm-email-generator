@@ -10,6 +10,8 @@ interface EmailSequenceDisplayProps {
   contactId: string;
   contactName: string;
   contactTitle: string;
+  contactEmail: string;
+  contactPhone: string | null;
   accountName: string;
   emails: EmailSequence;
   onSaved?: (id: string) => void;
@@ -26,6 +28,8 @@ export default function EmailSequenceDisplay({
   contactId,
   contactName,
   contactTitle,
+  contactEmail,
+  contactPhone,
   accountName,
   emails,
   onSaved,
@@ -37,7 +41,12 @@ export default function EmailSequenceDisplay({
         <h3 className="text-lg font-bold text-class-navy">
           {contactName}
         </h3>
-        <p className="mt-1 text-sm text-class-navy/60">
+        <div className="mt-3 space-y-1 text-sm text-class-navy/80">
+          <p><span className="font-medium">Title:</span> {contactTitle}</p>
+          <p><span className="font-medium">Email:</span> {contactEmail}</p>
+          {contactPhone && <p><span className="font-medium">Phone:</span> {contactPhone}</p>}
+        </div>
+        <p className="mt-3 text-sm text-class-navy/60">
           3-email sequence ({emails.length} emails)
         </p>
       </div>
